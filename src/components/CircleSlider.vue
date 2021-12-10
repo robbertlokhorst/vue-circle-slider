@@ -295,9 +295,9 @@ export default {
         if (Math.abs(endAngle - startAngle) < Math.abs(2 * curveAngleMovementUnit)) {
           this.updateAngle(endAngle)
         } else {
-          const newAngle = startAngle + curveAngleMovementUnit
-          this.updateAngle(newAngle)
-          this.animateSlider(newAngle, endAngle)
+          // const newAngle = startAngle + curveAngleMovementUnit
+          // this.updateAngle(newAngle)
+          // this.animateSlider(newAngle, endAngle)
         }
       }
 
