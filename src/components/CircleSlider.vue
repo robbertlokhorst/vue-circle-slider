@@ -7,7 +7,7 @@
       @mouseup="handleMouseUp"
     >
       <g>
-        <circle :stroke="circleColor" fill="none" :stroke-width="cpMainCircleStrokeWidth" :cx="cpCenter" :cy="cpCenter" :r="radius"></circle>
+        <circle :stroke="circleColor" :fill="circleFill" :stroke-width="cpMainCircleStrokeWidth" :cx="cpCenter" :cy="cpCenter" :r="radius"></circle>
         <path :stroke="progressColor" fill="none" :stroke-width="cpPathStrokeWidth" :d="cpPathD"></path>
         <circle :fill="knobColor" :r="cpKnobRadius" :cx="cpPathX" :cy="cpPathY"></circle>
       </g>
@@ -74,6 +74,11 @@ export default {
       type: String,
       required: false,
       default: '#334860'
+    },
+    circleFill: {
+      type: String,
+      required: false,
+      default: 'none'
     },
     progressColor: {
       type: String,
