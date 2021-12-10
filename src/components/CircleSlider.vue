@@ -17,7 +17,7 @@
           :cx="center" 
           :cy="center" 
           :r="radius"
-          fill="none" 
+          :fill="circleFill" 
         ></circle>
         <path 
           :stroke="progressColor" 
@@ -71,6 +71,10 @@ export default {
     circleColor: {
       type: String,
       default: '#334860'
+    },
+    circleFill: {
+      type: String,
+      default: 'none'
     },
     progressColor: {
       type: String,
