@@ -438,10 +438,10 @@ export default {
           if (this.currentKnob === 'max') this.updateMaxAngle(endAngle)
           else if (this.currentKnob === 'min') this.updateMinAngle(endAngle)
         } else {
-          const newAngle = startAngle + curveAngleMovementUnit
-          if (this.currentKnob === 'max') this.updateMaxAngle(newAngle)
-          else if (this.currentKnob === 'min') this.updateMinAngle(newAngle)
-          this.animateSlider(newAngle, endAngle)
+          // const newAngle = startAngle + curveAngleMovementUnit
+          // if (this.currentKnob === 'max') this.updateMaxAngle(newAngle)
+          // else if (this.currentKnob === 'min') this.updateMinAngle(newAngle)
+          // this.animateSlider(newAngle, endAngle)
         }
       }
       window.requestAnimationFrame(animate)
