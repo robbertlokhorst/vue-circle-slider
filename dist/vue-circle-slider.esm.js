@@ -459,7 +459,7 @@ var script = {
 
       var animate = function animate() {
         if (Math.abs(endAngle - startAngle) < Math.abs(2 * curveAngleMovementUnit)) {
-          if (_this2.currentKnob === 'max') _this2.updateMaxAngle(endAngle);else if (_this2.currentKnob === 'min') _this2.updateMinAngle(endAngle);
+          if (_this2.currentKnob === 'max' && endAngle > 0) _this2.updateMaxAngle(endAngle);else if (_this2.currentKnob === 'min') _this2.updateMinAngle(endAngle);
         }
       };
 

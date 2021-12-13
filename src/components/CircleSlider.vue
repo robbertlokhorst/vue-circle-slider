@@ -439,7 +439,7 @@ export default {
       
       const animate = () => {
         if (Math.abs(endAngle - startAngle) < Math.abs(2 * curveAngleMovementUnit)) {
-          if (this.currentKnob === 'max') this.updateMaxAngle(endAngle)
+          if (this.currentKnob === 'max' && endAngle > 0) this.updateMaxAngle(endAngle)
           else if (this.currentKnob === 'min') this.updateMinAngle(endAngle)
         } else {
           // const newAngle = startAngle + curveAngleMovementUnit
